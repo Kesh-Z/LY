@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 1 Month Anniversary ❤️ | You Got A Mail!</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💌</text></svg>">
+</head>
+<body>
+
+
+
+  <!-- Interactive Stage Container -->
+  <main class="stage-container">
+
+    <!-- VIEW 1: The Red Envelope Landing Stage (Matches Canva Reference) -->
+    <section class="envelope-view" id="envelopeView">
+      <h1 class="mail-title">YOU GOT A MAIL!</h1>
+
+      <!-- Mailbox Metallic Chute Box -->
+      <div class="mail-slot-wrapper">
+        <div class="mail-chute">
+          <div class="mail-slot-hole"></div>
+        </div>
+
+        <!-- Red Envelope emerging from slot -->
+        <div class="envelope-assembly" id="envelopeAssembly" title="Click to open your anniversary letter">
+          <div class="envelope-card-peek">
+            <span>Happy 1st Month ❤️</span>
+          </div>
+          <div class="envelope-body">
+            <div class="envelope-left-fold"></div>
+            <div class="envelope-right-fold"></div>
+            <div class="envelope-bottom-fold"></div>
+            <div class="envelope-top-flap"></div>
+          </div>
+          <!-- Golden Wax Seal with Heart -->
+          <div class="wax-seal" id="waxSeal">
+            <span class="wax-heart">❤️</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pill Button matching reference -->
+      <button class="open-btn" id="openEnvelopeBtn">
+        <span>click here</span>
+      </button>
+      <p class="open-btn-hint">Tap the envelope or button to open your surprise 💕</p>
+    </section>
+
+
+    <!-- VIEW 2: The Grand Reveal Stage (Letter in between 4 couple photos) -->
+    <section class="reveal-view" id="revealView">
+      
+      <!-- Top Anniversary Banner -->
+      <div class="anniversary-header">
+        <span class="anniversary-badge">Chapter One • 30 Days of Us</span>
+        <h2 class="reveal-title">HAPPY 1 MONTH ANNIVERSARY</h2>
+      </div>
+
+      <!-- 3-Column Stage Grid: Left 2 Photos | Center Letter | Right 2 Photos -->
+      <div class="anniversary-stage-grid">
+
+        <!-- LEFT COLUMN: 2 Couple Polaroids -->
+        <div class="photo-column photo-column-left">
+          
+          <!-- Polaroid 1: Intimate selfie in warm pink/purple glow -->
+          <div class="polaroid-card polaroid-1">
+            <div class="tape-strip"></div>
+            <div class="polaroid-img-box">
+              <img src="assets/images/photo1.jpg" alt="Our Date Night Moment" class="polaroid-img">
+            </div>
+          </div>
+
+          <!-- Polaroid 2: Fun red glow car selfie making silly faces -->
+          <div class="polaroid-card polaroid-2">
+            <div class="tape-strip"></div>
+            <div class="polaroid-img-box">
+              <img src="assets/images/photo2.jpg" alt="Goofy car rides with you" class="polaroid-img">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CENTER COLUMN: Romantic Love Letter Card -->
+        <div class="letter-center-column">
+          <article class="romantic-letter-card">
+            
+            <h3 class="letter-salutation">Wo De Baobei,</h3>
+
+            <div class="letter-body-text" id="letterBodyText">
+              <p>Happy 1 Month Anniversary baby!! ❤️</p>
+              
+              <p>Thank you for giving me a chance to be a part of your life. I still can't believe we've been together for a whole month already. There are still so many things for us to see and experience together in the future. From missing each other everyday to late-night calls where I just get to enjoy that pretty smile of yours and looks of yours, yum yum 😝. Even though LDR can be tough, as long as we both love each other and keep choosing each other, I believe nothing can come between us.</p>
+
+              <p>Thank you for being so patient, sweet, caring, and loving with me. You will always be the prettiest person in my eyes and really imporant to me.</p>
+
+              <p>Wo Ai Ni Baobeii 💕</p>
+            </div>
+
+          </article>
+        </div>
+
+        <!-- RIGHT COLUMN: 2 Couple Polaroids -->
+        <div class="photo-column photo-column-right">
+
+          <!-- Polaroid 3: Mirror selfie in bedroom -->
+          <div class="polaroid-card polaroid-3">
+            <div class="tape-strip"></div>
+            <div class="polaroid-img-box">
+              <img src="assets/images/photo3.jpg" alt="Favorite mirror selfies" class="polaroid-img">
+            </div>
+          </div>
+
+          <!-- Polaroid 4: Ocean balcony selfie hugging -->
+          <div class="polaroid-card polaroid-4">
+            <div class="tape-strip"></div>
+            <div class="polaroid-img-box">
+              <img src="assets/images/photo4.jpg" alt="Balcony view with my favorite view" class="polaroid-img">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Photo Lightbox Modal (Click to zoom any picture) -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose">&times;</button>
+      <img src="" alt="Enlarged Couple Memory" class="lightbox-img" id="lightboxImg">
+      <p class="lightbox-caption-text" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- Edit Message Modal -->
+  <div class="modal-overlay" id="editModal">
+    <div class="modal-box">
+      <h3 class="modal-title">💌 Edit Your Anniversary Message</h3>
+      <p style="font-size:0.85rem; color:#888; margin-bottom:12px;">You can customize the words in your letter here. Changes are saved automatically!</p>
+      <textarea class="edit-textarea" id="messageTextarea" placeholder="Write your heartfelt message here..."></textarea>
+      <div class="modal-actions">
+        <button class="action-btn action-btn-secondary" id="cancelEditBtn">Cancel</button>
+        <button class="action-btn action-btn-primary" id="saveMessageBtn">Save Message ❤️</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

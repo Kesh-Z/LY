@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our First Month Memories | Scrapbook ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💌</text></svg>">
+</head>
+<body>
+
+  <!-- Floating Hearts Background -->
+  <div class="hearts-container" id="heartsContainer"></div>
+
+  <!-- Subtle Floating Music Toggle in Corner -->
+  <button class="music-floating-btn" id="musicToggleBtn" title="Toggle Music">
+    <span id="musicIcon">🎵</span>
+  </button>
+
+  <!-- Main Scrapbook Container -->
+  <main class="page-container">
+    
+    <div class="page-hero">
+      <span class="anniversary-badge">Chapter One Photo Album</span>
+      <h1 class="page-title">30 DAYS OF BEAUTIFUL MEMORIES</h1>
+      <p class="page-sub">Every picture tells our story, and I love every part of it ❤️</p>
+    </div>
+
+    <!-- Timeline Grid of the 4 Couple Moments -->
+    <div class="timeline-grid">
+      
+      <!-- Memory 1 -->
+      <article class="memory-card">
+        <div class="polaroid-card" style="box-shadow:none; padding:0; width:100%; max-width:none; transform:none;">
+          <div class="memory-img-wrapper">
+            <img src="assets/images/photo1.jpg" alt="Date Night Romance" class="memory-img polaroid-img">
+          </div>
+        </div>
+        <span class="memory-tag">Moment #1 • The Beginning</span>
+        <h3 class="memory-caption-title">Where It All Began</h3>
+        <p class="memory-caption-desc">Looking into your eyes under the warm lights. That was the moment I realized how lucky I am to have you close to me.</p>
+      </article>
+
+      <!-- Memory 2 -->
+      <article class="memory-card">
+        <div class="polaroid-card" style="box-shadow:none; padding:0; width:100%; max-width:none; transform:none;">
+          <div class="memory-img-wrapper">
+            <img src="assets/images/photo2.jpg" alt="Silly Car Ride" class="memory-img polaroid-img">
+          </div>
+        </div>
+        <span class="memory-tag">Moment #2 • Pure Laughs</span>
+        <h3 class="memory-caption-title">Matching My Freak</h3>
+        <p class="memory-caption-desc">Late-night drives, red ambient lights, and making the goofiest faces together. Nobody makes me laugh as much as you do.</p>
+      </article>
+
+      <!-- Memory 3 -->
+      <article class="memory-card">
+        <div class="polaroid-card" style="box-shadow:none; padding:0; width:100%; max-width:none; transform:none;">
+          <div class="memory-img-wrapper">
+            <img src="assets/images/photo3.jpg" alt="Mirror Selfie Together" class="memory-img polaroid-img">
+          </div>
+        </div>
+        <span class="memory-tag">Moment #3 • Favorite Duo</span>
+        <h3 class="memory-caption-title">You & Me Always</h3>
+        <p class="memory-caption-desc">My all-time favorite mirror selfie. The way you tease me and smile right at me is the sweetest thing in the world.</p>
+      </article>
+
+      <!-- Memory 4 -->
+      <article class="memory-card">
+        <div class="polaroid-card" style="box-shadow:none; padding:0; width:100%; max-width:none; transform:none;">
+          <div class="memory-img-wrapper">
+            <img src="assets/images/photo4.jpg" alt="Ocean Balcony View" class="memory-img polaroid-img">
+          </div>
+        </div>
+        <span class="memory-tag">Moment #4 • Adventures</span>
+        <h3 class="memory-caption-title">My Favorite View</h3>
+        <p class="memory-caption-desc">Standing on that balcony overlooking the sea, holding you in my arms. No matter how pretty the ocean is, you'll always be my favorite view.</p>
+      </article>
+
+    </div>
+
+    <!-- Bottom Navigation Callout -->
+    <div style="text-align: center; margin-top: 45px;">
+      <a href="index.html" class="action-btn action-btn-secondary" style="margin-right: 12px;">
+        <span>💌</span> Back to Mailbox
+      </a>
+      <a href="letter.html" class="action-btn action-btn-primary">
+        <span>📖</span> Read Full Love Letter
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Photo Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose">&times;</button>
+      <img src="" alt="Enlarged Couple Memory" class="lightbox-img" id="lightboxImg">
+      <p class="lightbox-caption-text" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
